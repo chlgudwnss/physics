@@ -5,7 +5,10 @@
 void main()
 {
     double angle_radian, cosine, sine, tangent;
-    double degree = 30;
+    double degree;
+
+    printf("각도를 입력하세요: ");
+    scanf_s("%lf", &degree);
 
     angle_radian = degree * M_PI / 180;
     cosine = cos(angle_radian);
