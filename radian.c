@@ -17,5 +17,4 @@ void main()
     printf("sin: %f\n", sine);
     printf("tan: %f\n", tangent);
 
-    return 0;
 }
