@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int  main()
+{
+	double V = 0.0; // 속도
+	double V0 = 25; // 초기속도 m/s
+	double Us = 0.85; // 마찰계수
+	double m = 1200.0; //질량
+	double g = 9.8; // 중력
+
+
+	// 달리는 자동차의 최소 정지거리를 구하여라.
+	double d = (V0 * V0) / (2 * Us * g);
+	printf("최소 정지거리: %.2f m \n", d);
+
+	//자동차가 달에 있을때
+	// V0와 Us는 지구와 같다
+	double g_1 = 1.62; //달의 중력
+	double x = (V0 * V0) / (2 * Us * g_1);
+	printf("자동차가 달에 있을때 최소 정지거리는 %.2f m 입니다. \n", x);
+
+
+
+}
