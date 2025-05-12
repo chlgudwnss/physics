@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14
+
+int main()
+{
+	double g = 9.8; //	중력
+	double Ux = 0.8; //	마찰계수
+
+	// 자동차를 주차 할 수 잇는 최대 각도는 얼마인가?
+	double theta_rad = atan(Ux); // atan는 tan의 역함수
+	double theta_deg = theta_rad * 180 / PI;
+
+	printf("자동차를 주차할 수 있는 최대 경사각은 약 %.2f도입니다.\n", theta_deg);
+
+}
