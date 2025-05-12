@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+	double g = 9.8; // 중력
+	double m = 20.0; // 질량
+	double Us = 0.1; // 정지마찰력계수
+	double Ux = 0.06; // 운동마찰계수
+
+
+	//(a) 최대 정지마찰력은 얼마인가?
+	double Ff_1 = m * g * Us;
+	printf("최대 정지마찰력은 %.2f N입니다. \n", Ff_1);
+
+	//(b) 운동마찰력은 얼마인가?
+	double Ff_2 = Ux * m * g;
+	printf("운동마찰력은 %.2f N입니다. \n", Ff_2);
+
+	//(c) 물체를 22N의 힘으로 수평방향으로 끌 때 물체의 가속도는 얼마인가?
+	double a = (22 - Ff_2) / m;
+	printf("물체의 가속도는 %.4f m/ss입니다.\n", a);
+
+
+}
