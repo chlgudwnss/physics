@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	double m = 20.0;	// 질량
+	double g = 9.8;		// 중력
+	double Ux = 0.30;	// 운동마찰계수
+
+	// 나무상자를 일정한 속력으로 움직이는데 필요한 수평력은 얼마인가?
+	double Ff_1 = m * g * Ux;
+	printf("필요한 수평력은 %.2f N입니다. \n", Ff_1);
+
+	// 만약 Ux가 0이라면 수평력은 얼마인가?
+	double Ux_1 = 0;
+	double Ff_2 = m * g * Ux_1;
+	printf("필요한 수평력은 %.2f N입니다. \n", Ff_2);
+
+
+}
